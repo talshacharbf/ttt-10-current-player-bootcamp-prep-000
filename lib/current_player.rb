@@ -10,7 +10,7 @@ counter
 end
 
 def current_player(board)
-  turn_count(board)
+  turn_count(board) = counter
   if counter == 0
     return "X"
   elsif counter % 2 == 0
@@ -18,4 +18,4 @@ def current_player(board)
   else
     return "O"
   end
-end 
+end
